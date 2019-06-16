@@ -1,0 +1,13 @@
+.tinted-image {
+  height: 125px;
+  background: linear-gradient(to right, var(--color), var(--color2)), var(--url);
+}
+
+.event-box {
+  margin: 8px;
+  margin-bottom: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}

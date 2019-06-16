@@ -1,0 +1,115 @@
+.slider {
+    position: relative;
+    width: 280px;
+    height: 4px;
+    margin-top: 8%;
+    background: hsla(0, 60%, 50%, 1);
+    border-radius: 2px;
+  }
+  
+  .grad {
+    background: #ff3232; /* Old browsers */
+    background: -moz-linear-gradient(
+      left,
+      #ff3232 0%,
+      #fff130 20%,
+      #45ff30 35%,
+      #28fff0 52%,
+      #282cff 71%,
+      #ff28fb 88%,
+      #ff0094 100%
+    ); /* FF3.6+ */
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(0%, #ff3232),
+      color-stop(20%, #fff130),
+      color-stop(35%, #45ff30),
+      color-stop(52%, #28fff0),
+      color-stop(71%, #282cff),
+      color-stop(88%, #ff28fb),
+      color-stop(100%, #ff0094)
+    ); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(
+      left,
+      #ff3232 0%,
+      #fff130 20%,
+      #45ff30 35%,
+      #28fff0 52%,
+      #282cff 71%,
+      #ff28fb 88%,
+      #ff0094 100%
+    ); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(
+      left,
+      #ff3232 0%,
+      #fff130 20%,
+      #45ff30 35%,
+      #28fff0 52%,
+      #282cff 71%,
+      #ff28fb 88%,
+      #ff0094 100%
+    ); /* Opera 11.10+ */
+    background: -ms-linear-gradient(
+      left,
+      #ff3232 0%,
+      #fff130 20%,
+      #45ff30 35%,
+      #28fff0 52%,
+      #282cff 71%,
+      #ff28fb 88%,
+      #ff0094 100%
+    ); /* IE10+ */
+    background: linear-gradient(
+      to right,
+      #ff3232 0%,
+      #fff130 20%,
+      #45ff30 35%,
+      #28fff0 52%,
+      #282cff 71%,
+      #ff28fb 88%,
+      #ff0094 100%
+    ); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#ff0094',GradientType=1 ); /* IE6-9 */
+  }
+  
+  .handle {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background: hsla(0, 60%, 50%, 1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3), inset 0 0 0 0 #fff;
+    transition: box-shadow 0.2s;
+  }
+  
+  .handle.pop {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3), inset 0 0 0 4px #fff;
+  }
+  
+  .handle:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -2px;
+    background: inherit;
+    width: 4px;
+    height: 4px;
+    border-radius: 20px;
+    transition: top 0.2s, left 0.2s, margin-left 0.2s, height 0.2s, width 0.2s;
+  }
+  .handle.pop:before {
+    top: -50px;
+    left: 50%;
+    margin-left: -20px;
+    background: inherit;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  

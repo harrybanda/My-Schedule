@@ -1,0 +1,44 @@
+.full-height {
+  height: 100vh;
+}
+
+.ui-timepicker-container {
+  z-index: 1151 !important;
+}
+
+.ui-autocomplete-loading {
+  background: white url("../images/ajax-loader.gif") right 10px center no-repeat;
+}
+
+.ui-widget-content .ui-icon {
+  background-image: url("../images/ui-icons_777777_256x240.png") !important;
+}
+
+.ui-widget-header .ui-icon {
+  background-image: url("../images/ui-icons_777777_256x240.png") !important;
+}
+
+.modal-btn-group {
+  margin-top: 60px;
+}
+
+.modal-btn-close {
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.tinted-image-pre {
+  width: 300px;
+  height: 125px;
+  background: linear-gradient(to right, var(--color), var(--color2)),
+    url(https://static-cdn.jtvnw.net/ttv-boxart/Apex%20Legends-300x400.jpg);
+}
+
+.event-box-pre {
+  margin-bottom: 8px !important;
+}
+
+

@@ -1,0 +1,82 @@
+{
+  "allowHttpBackend": false,
+  "backendCommand": "",
+  "backendFolderName": "",
+  "extensionViews": [
+    {
+      "id": "1",
+      "label": "",
+      "channelId": "253120118",
+      "type": "panel",
+      "features": {
+        "isChatEnabled": false
+      },
+      "linked": true,
+      "linkedUserId": "253120118",
+      "mode": "viewer",
+      "isPopout": false,
+      "role": "Logged-In Viewer",
+      "x": 0,
+      "y": 0,
+      "orientation": "Portrait",
+      "frameSize": {
+        "width": 640,
+        "height": 480
+      }
+    }
+  ],
+  "frontendCommand": "",
+  "frontendFolderName": "C:\\Users\\Harry\\Projects\\backup\\My Schedule\\public",
+  "manifest": {
+    "anchor": "panel",
+    "assetUrls": [],
+    "authorName": "Harry",
+    "bitsEnabled": true,
+    "canInstall": true,
+    "configUrl": "https://localhost.rig.twitch.tv:8080/config.html",
+    "configurationLocation": "hosted",
+    "description": "My Schedule",
+    "eulaTosUrl": "",
+    "hasChatSupport": false,
+    "iconUrl": "https://media.forgecdn.net/avatars/191/669/636860918762021447.png",
+    "iconUrls": {
+      "100x100": "https://media.forgecdn.net/avatars/191/669/636860918762021447.png"
+    },
+    "id": "5uc64q8bgi9vitka6t7f8zid4r28rm",
+    "installationCount": -42,
+    "liveConfigUrl": "",
+    "name": "My Schedule",
+    "panelHeight": 500,
+    "privacyPolicyUrl": "",
+    "requestIdentityLink": true,
+    "requiredBroadcasterAbilities": [],
+    "screenshotUrls": [
+      "internal/screenshots/test_data.png"
+    ],
+    "sku": "",
+    "state": "Testing",
+    "subscriptionsSupportLevel": "none",
+    "summary": "My Schedule",
+    "supportEmail": "harrybanda7@gmail.com",
+    "vendorCode": "",
+    "version": "0.0.1",
+    "viewerUrl": "https://localhost.rig.twitch.tv:8080/panel.html",
+    "viewerUrls": {
+      "panel": "https://localhost.rig.twitch.tv:8080/panel.html"
+    },
+    "views": {
+      "panel": {
+        "viewerUrl": "https://localhost.rig.twitch.tv:8080/panel.html",
+        "height": 500,
+        "canLinkExternalContent": false
+      },
+      "config": {
+        "viewerUrl": "https://localhost.rig.twitch.tv:8080/config.html",
+        "canLinkExternalContent": false
+      }
+    },
+    "whitelistedConfigUrls": [],
+    "whitelistedPanelUrls": []
+  },
+  "name": "My Schedule"
+}

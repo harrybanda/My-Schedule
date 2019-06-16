@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Config Page</title>
+    <link rel="stylesheet" href="vendor/bulma.min.css" />
+    <link rel="stylesheet" href="vendor/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="vendor/jquery/jquery.timepicker.min.css" />
+    <link rel="stylesheet" href="vendor/jquery/jquery-ui.min.css" />
+    <link rel="stylesheet" href="styles/config.css" />
+    <link rel="stylesheet" href="styles/loader.css" />
+    <link rel="stylesheet" href="styles/color_picker.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- Event Modal -->
+    <div id="event-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <section class="modal-card-body">
+          <form id="event-form">
+            <div class="title is-5">
+              <label class="modal-header has-text-grey">New Event</label>
+              <i
+                class="far fa-times-circle is-pulled-right has-text-grey modal-btn-close"
+              ></i>
+            </div>
+            <br />
+            <div class="field">
+              <div class="control">
+                <input
+                  id="event-title"
+                  class="input"
+                  type="text"
+                  placeholder="Add Title"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <input
+                  id="event-date"
+                  class="input datepicker"
+                  type="text"
+                  placeholder="Date"
+                  required
+                  onkeydown="return false"
+                />
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      id="event-st"
+                      class="input timepicker"
+                      type="text"
+                      placeholder="Start Time"
+                      required
+                      onkeydown="return false"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="field">
+                  <div class="control">
+                    <input
+                      id="event-et"
+                      class="input timepicker"
+                      type="text"
+                      placeholder="End Time"
+                      required
+                      onkeydown="return false"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field is-grouped">
+              <div class="control">
+                <button type="submit" id="btn-add-event" class="button is-link">
+                  Save
+                </button>
+              </div>
+              <div class="control">
+                <button type="button" class="button btn-close-mod">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+    <!-- Customize Modal -->
+    <div id="customize-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <section class="modal-card-body">
+          <div class="title is-5">
+            <label class="has-text-grey">Customize</label>
+            <i
+              class="far fa-times-circle is-pulled-right has-text-grey modal-btn-close"
+            ></i>
+          </div>
+          <br />
+          <div class="columns">
+            <div class="column">
+              <div
+                class="box tinted-image-pre event-box-pre is-marginless"
+                style="--color: hsla(0, 60%, 50%, 1); --color2: hsla(1, 60%, 50%, 0.6);"
+              >
+                <h1 class="title is-6 has-text-white">APEX LEGENDS</h1>
+                <h2 class="subtitle is-7 has-text-white">
+                  TUE <span class="separator-pre">&#8226;</span> MAY 3
+                </h2>
+                <p class="is-size-7 has-text-white">8:00PM - 11:00PM</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="slider">
+                <div class="handle"></div>
+              </div>
+              <div class="field is-grouped is-pulled-right modal-btn-group">
+                <div class="control">
+                  <button
+                    type="submit"
+                    id="btn-save-style"
+                    class="button is-link"
+                  >
+                    Save
+                  </button>
+                </div>
+                <div class="control">
+                  <button type="button" class="button btn-close-mod">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Main -->
+    <div id="app" class="full-height has-background-light">
+      <section class="section">
+        <div class="container">
+          <div class="container">
+            <div class="title is-4">
+              <label>My Schedule</label>
+              <div class="field is-grouped is-pulled-right">
+                <p class="control">
+                  <button id="btn-customize" class="button is-primary">
+                    <span class="icon">
+                      <i class="fas fa-palette"></i>
+                    </span>
+                    <span>Customize</span>
+                  </button>
+                  <button id="btn-create-event" class="button is-info">
+                    <span class="icon">
+                      <i class="fas fa-plus"></i>
+                    </span>
+                    <span>Add Event</span>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+        </div>
+        <div id="events-list">
+          <div id="loading" class="has-text-grey-light is-size-4">
+            <div class="loader"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+    <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="vendor/jquery/jquery.timepicker.min.js"></script>
+    <script src="vendor/jquery/jquery-ui.min.js"></script>
+    <script src="vendor/moment.min.js"></script>
+    <script src="config.js" type="text/javascript"></script>
+  </body>
+</html>
