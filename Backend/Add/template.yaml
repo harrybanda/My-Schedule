@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  MySchedule-Add:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Description: ''
+      Handler: index.handler
+      MemorySize: 128
+      Role: 'arn:aws:iam::747857903140:role/twitch-ext-myschedule'
+      Runtime: nodejs8.10
+      Timeout: 3
+      Events:
+        LambdaMicroservice:
+          Type: Api
+          Properties:
+            Path: /add/{event}
+            Method: POST
